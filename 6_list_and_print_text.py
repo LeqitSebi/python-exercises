@@ -27,7 +27,7 @@ def remove_doubles(string, list):
 
 def list_and_printfreq(word_count):
     sentence = gen_text(word_count)
-    print(sentence)
+    print("original sentence: " + sentence)
     list = []
     for words in sentence:
         list.append(words)
