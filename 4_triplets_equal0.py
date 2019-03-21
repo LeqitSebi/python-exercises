@@ -1,11 +1,31 @@
-#not a finished programm
-numbers = [1, 2, 4, 5, -5, -4, -6, 7, -9]
+# not a finished programm
+numbers = [1, -1, 0, 5, 6, 7, 8]
 
 
 def find_triplets(list):
-    output = []
-    list.sort()
+    i = 0
+    while i < len(list):
+        nums = list
+        add = nums[i]
+        returner1 = nums[i]
+        nums.remove(nums[i])
+        i += 1
+        j = 0
+        while j < len(nums):
+            add += nums[j]
+            returner2 = nums[j]
+            nums.remove(nums[j])
+            j += 1
+            k = 0
+            while k < len(nums):
+                add += nums[k]
+                returner3 = nums[k]
+                k += 1
+        if add == 0:
+            print(returner1 + returner2 + returner3)
 
 
-#still trying to figure out a relatively good
-# algorythm to calculate all triples that equal 0
+print(find_triplets(numbers))
+
+#still doesn'T work correctly
+#trying to figure out what went wrong
