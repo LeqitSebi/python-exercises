@@ -1,4 +1,3 @@
-# not a finished programm
 numbers = [1, -1, 0, 5, 6, 7, 8]
 
 
@@ -21,11 +20,8 @@ def find_triplets(list):
                 add += nums[k]
                 returner3 = nums[k]
                 k += 1
-        if add == 0:
-            print(returner1 + returner2 + returner3)
+                if add == 0:
+                    print(str(returner1) + ", " + str(returner2) + ", " + str(returner3))
 
 
 print(find_triplets(numbers))
-
-#still doesn'T work correctly
-#trying to figure out what went wrong
